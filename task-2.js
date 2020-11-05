@@ -12,6 +12,4 @@ const ingredientsList = ingredients.map(function (ingredient) {
   return listItems;
 });
 console.log(ingredientsList);
-const ulList = document.querySelector("ul");
-ulList.append(ingredientsList);
-console.log(ulList);
+document.querySelector('#ingredients').append(...ingredientsList);
